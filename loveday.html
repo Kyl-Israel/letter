@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Monthsary Langga</title>
+
+    <link rel="stylesheet" href="./love.css">
+</head>
+<body>
+
+    <audio id="loveSong" src="youandme.mp3"></audio>
+
+    <script>
+    const audio = document.getElementById("loveSong");
+    let fadeInterval;
+
+
+    function fadeInAudio() {
+      audio.volume = 0;
+      audio.play();
+      fadeInterval = setInterval(() => {
+        if (audio.volume < 0.99) {
+          audio.volume = Math.min(audio.volume + 0.01, 1);
+        } else {
+          clearInterval(fadeInterval);
+        }
+      }, 0);
+    }
+
+    function fadeOutAudio() {
+      clearInterval(fadeInterval);
+      fadeInterval = setInterval(() => {
+        if (audio.volume > 0.01) {
+          audio.volume = Math.max(audio.volume - 0.01, 0);
+        } else {
+          audio.pause();
+          audio.currentTime = 0;
+          clearInterval(fadeInterval);
+        }
+      }, 100); 
+    }
+
+   
+    window.addEventListener("click", () => {
+      fadeInAudio();
+    }, { once: true });
+
+    audio.addEventListener("loadedmetadata", () => {
+      const fadeOutTime = audio.duration - 3;
+      if (fadeOutTime > 0) {
+        setTimeout(fadeOutAudio, fadeOutTime * 1000);
+      }
+    });
+  </script>
+    
+    <p style="font-family: 'Segoe UI Emoji';">
+        Langga, sa tanan nakong ge hatag nga letter nimo ba kay ga inenglish gyud ko kanunay, mao na nga 
+        karon naka hokum ko nga mag binisaya na pud hehe. Pero di mana ma binisaya ang "Happy Monthsary", unsa man 
+        binisaya pud ana maayong ka buwanan sa atong panaghigugmaay?? HAHAHA (≧◡≦) Unta dili raka cornihan ani
+        akong ge buhat ha (｡•‿•｡). Pero bitaw langg, gusto lang gyud ka nako e greet karon nga adlaw
+        aron ma remind ka kung unsa taka ka pinangga (｡･ ᴗ･｡)♡ Bisag unsa ta ka layo gina huna-huna 
+        tika kada adlaw. Wala koy lain kanunay ge ampo sa Ginoo nga unta safe ka kanunay og guidan ka
+        niya sa imong mga plano sa kinabuhi. Gimingaw ko nimo kanunay bebu. Promise nako mag tinarong
+        ko kanunay. Bisan unsa pa man ang moabot, naa ra gihapon ko para nimo.
+        Ikaw ra gyud akong gipili, ug ikaw ra gihapon hangtod sa hangtod (づ￣ ³￣)づ Langga, sa tanan nakong ge hatag nga letter nimo ba kay ga inenglish gyud ko kanunay, mao na nga 
+        karon naka hokum ko nga mag binisaya na pud hehe. Pero di mana ma binisaya ang "Happy Monthsary", unsa man 
+        binisaya pud ana maayong ka buwanan sa atong panaghigugmaay?? HAHAHA (≧◡≦) Unta dili raka cornihan ani
+        akong ge buhat ha (｡•‿•｡). Pero bitaw langg, gusto lang gyud ka nako e greet karon nga adlaw
+        aron ma remind ka kung unsa taka ka pinangga (｡･ ᴗ･｡)♡ Bisag unsa ta ka layo gina huna-huna 
+        tika kada adlaw. Wala koy lain kanunay ge ampo sa Ginoo nga unta safe ka kanunay og guidan ka
+        niya sa imong mga plano sa kinabuhi. Gimingaw ko nimo kanunay bebu. Promise nako mag tinarong
+        ko kanunay. Bisan unsa pa man ang moabot, naa ra gihapon ko para nimo.
+        Ikaw ra gyud akong gipili, ug ikaw ra gihapon hangtod sa hangtod (づ￣ ³￣)づLangga, sa tanan nakong ge hatag nga letter nimo ba kay ga inenglish gyud ko kanunay, mao na nga 
+        karon naka hokum ko nga mag binisaya na pud hehe. Pero di mana ma binisaya ang "Happy Monthsary", unsa man 
+        binisaya pud ana maayong ka buwanan sa atong panaghigugmaay?? HAHAHA (≧◡≦) Unta dili raka cornihan ani
+        akong ge buhat ha (｡•‿•｡). Pero bitaw langg, gusto lang gyud ka nako e greet karon nga adlaw
+        aron ma remind ka kung unsa taka ka pinangga (｡･ ᴗ･｡)♡ Bisag unsa ta ka layo gina huna-huna 
+        tika kada adlaw. Wala koy lain kanunay ge ampo sa Ginoo nga unta safe ka kanunay og guidan ka
+        niya sa imong mga plano sa kinabuhi. Gimingaw ko nimo kanunay bebu. Promise nako mag tinarong
+        ko kanunay. Bisan unsa pa man ang moabot, naa ra gihapon ko para nimo.
+        Ikaw ra gyud akong gipili, ug ikaw ra gihapon hangtod sa hangtod (づ￣ ³￣)づLangga, sa tanan nakong ge hatag nga letter nimo ba kay ga inenglish gyud ko kanunay, mao na nga 
+        karon naka hokum ko nga mag binisaya na pud hehe. Pero di mana ma binisaya ang "Happy Monthsary", unsa man 
+        binisaya pud ana maayong ka buwanan sa atong panaghigugmaay?? HAHAHA (≧◡≦) Unta dili raka cornihan ani
+        akong ge buhat ha (｡•‿•｡). Pero bitaw langg, gusto lang gyud ka nako e greet karon nga adlaw
+        aron ma remind ka kung unsa taka ka pinangga (｡･ ᴗ･｡)♡ Bisag unsa ta ka layo gina huna-huna 
+        tika kada adlaw. Wala koy lain kanunay ge ampo sa Ginoo nga unta safe ka kanunay og guidan ka
+        niya sa imong mga plano sa kinabuhi. Gimingaw ko nimo kanunay bebu. Promise nako mag tinarong
+        ko kanunay. Bisan unsa pa man ang moabot, naa ra gihapon ko para nimo.
+        Ikaw ra gyud akong gipili, ug ikaw ra gihapon hangtod sa hangtod (づ￣ ³￣)づLangga, sa tanan nakong ge hatag nga letter nimo ba kay ga inenglish gyud ko kanunay, mao na nga 
+        karon naka hokum ko nga mag binisaya na pud hehe. Pero di mana ma binisaya ang "Happy Monthsary", unsa man 
+        binisaya pud ana maayong ka buwanan sa atong panaghigugmaay?? HAHAHA (≧◡≦) Unta dili raka cornihan ani
+        akong ge buhat ha (｡•‿•｡). Pero bitaw langg, gusto lang gyud ka nako e greet karon nga adlaw
+        aron ma remind ka kung unsa taka ka pinangga (｡･ ᴗ･｡)♡ Bisag unsa ta ka layo gina huna-huna 
+        tika kada adlaw. Wala koy lain kanunay ge ampo sa Ginoo nga unta safe ka kanunay og guidan ka
+        niya sa imong mga plano sa kinabuhi. Gimingaw ko nimo kanunay bebu. Promise nako mag tinarong
+        ko kanunay. Bisan unsa pa man ang moabot, naa ra gihapon ko para nimo.
+        Ikaw ra gyud akong gipili, ug ikaw ra gihapon hangtod sa hangtod (づ￣ ³￣)づLangga, sa tanan nakong ge hatag nga letter nimo ba kay ga inenglish gyud ko kanunay, mao na nga 
+        karon naka hokum ko nga mag binisaya na pud hehe. Pero di mana ma binisaya ang "Happy Monthsary", unsa man 
+        binisaya pud ana maayong ka buwanan sa atong panaghigugmaay?? HAHAHA (≧◡≦) Unta dili raka cornihan ani
+        akong ge buhat ha (｡•‿•｡). Pero bitaw langg, gusto lang gyud ka nako e greet karon nga adlaw
+        aron ma remind ka kung unsa taka ka pinangga (｡･ ᴗ･｡)♡ Bisag unsa ta ka layo gina huna-huna 
+        tika kada adlaw. Wala koy lain kanunay ge ampo sa Ginoo nga unta safe ka kanunay og guidan ka
+        niya sa imong mga plano sa kinabuhi. Gimingaw ko nimo kanunay bebu. Promise nako mag tinarong
+        ko kanunay. Bisan unsa pa man ang moabot, naa ra gihapon ko para nimo.
+        Ikaw ra gyud akong gipili, ug ikaw ra gihapon hangtod sa hangtod (づ￣ ³￣)づLangga, sa tanan nakong ge hatag nga letter nimo ba kay ga inenglish gyud ko kanunay, mao na nga 
+        karon naka hokum ko nga mag binisaya na pud hehe. Pero di mana ma binisaya ang "Happy Monthsary", unsa man 
+        binisaya pud ana maayong ka buwanan sa atong panaghigugmaay?? HAHAHA (≧◡≦) Unta dili raka cornihan ani
+        akong ge buhat ha (｡•‿•｡). Pero bitaw langg, gusto lang gyud ka nako e greet karon nga adlaw
+        aron ma remind ka kung unsa taka ka pinangga (｡･ ᴗ･｡)♡ Bisag unsa ta ka layo gina huna-huna 
+        tika kada adlaw. Wala koy lain kanunay ge ampo sa Ginoo nga unta safe ka kanunay og guidan ka
+        niya sa imong mga plano sa kinabuhi. Gimingaw ko nimo kanunay bebu. Promise nako mag tinarong
+        ko kanunay. Bisan unsa pa man ang moabot, naa ra gihapon ko para nimo.
+        Ikaw ra gyud akong gipili, ug ikaw ra gihapon hangtod sa hangtod (づ￣ ³￣)づLangga, sa tanan nakong ge hatag nga letter nimo ba kay ga inenglish gyud ko kanunay, mao na nga 
+        karon naka hokum ko nga mag binisaya na pud hehe. Pero di mana ma binisaya ang "Happy Monthsary", unsa man 
+        binisaya pud ana maayong ka buwanan sa atong panaghigugmaay?? HAHAHA (≧◡≦) Unta dili raka cornihan ani
+        akong ge buhat ha (｡･ ᴗ･｡)♡♡♡
+    </p>
+
+</body>
+</html>
